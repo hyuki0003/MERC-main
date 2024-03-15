@@ -105,7 +105,7 @@ class Coach:
                         'lr': self.scheduler._last_lr
                     }, "model_checkpoints/"
                         + self.args.dataset
-                        + "_best_dev_f1_model_"
+                        + "_best_dev_f1_model_ret"
                         + self.args.modalities
                         + ".pt")
 

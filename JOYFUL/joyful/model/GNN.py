@@ -6,6 +6,7 @@ import numpy as np
 from GCL.models import DualBranchContrast
 import GCL.losses as L
 
+
 torch.cuda.manual_seed(24)
 
 def sim(h1, h2):

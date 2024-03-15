@@ -16,7 +16,7 @@ def load_pkl(file):
 def main(args):
     data = load_pkl(f"./data/iemocap_4/data_iemocap_4.pkl")
     #data = load_pkl(f"./data/iemocap/data_iemocap.pkl")
-    model_dict = torch.load('./model_checkpoints/iemocap_4_best_dev_f1_model_atv.pt')
+    model_dict = torch.load('./model_checkpoints/iemocap_4_best_dev_f1_model_retatv.pt')
     #model_dict = torch.load('model_checkpoints/iemocap_best_dev_f1_model_atv.pt')
     stored_args = model_dict["args"]
     model = model_dict["modelN_state_dict"]

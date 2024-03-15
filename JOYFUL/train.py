@@ -1,4 +1,5 @@
 from joyful.fusion_methods import AutoFusion
+
 import argparse
 import torch
 import os
@@ -135,7 +136,7 @@ if __name__ == "__main__":
 
     parser.add_argument("--device", type=str, default="cuda", help="Computing device.")
     parser.add_argument(
-        "--epochs", default=1, type=int, help="Number of training epochs."
+        "--epochs", default=50, type=int, help="Number of training epochs."
     )
     parser.add_argument("--batch_size", default=32, type=int, help="Batch size.")
     parser.add_argument(
